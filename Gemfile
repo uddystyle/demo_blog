@@ -33,9 +33,6 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Makes errors better looking
-gem 'better_errors', '~> 2.4'
-
 # Bulma Css
 gem 'bulma-rails', '~> 0.7.1'
 
@@ -57,6 +54,12 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  gem 'guard', '~> 2.14', '>= 2.14.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+
+  # Makes errors better looking
+  gem 'better_errors', '~> 2.4'
 end
 
 group :test do
